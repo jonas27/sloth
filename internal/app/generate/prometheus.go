@@ -111,10 +111,6 @@ type Response struct {
 }
 
 func (s Service) Generate(ctx context.Context, r Request) (*Response, error) {
-	err := r.SLOGroup.Validate()
-	if err != nil {
-		return nil, fmt.Errorf("invalid SLO group: %w", err)
-	}
 
 	// Generate Prom rules.
 	results := make([]SLOResult, 0, len(r.SLOGroup.SLOs))
