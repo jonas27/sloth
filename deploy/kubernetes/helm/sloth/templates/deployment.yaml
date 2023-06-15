@@ -63,6 +63,13 @@ spec:
             {{- if .Values.sloth.debug.enabled }}
             - --debug
             {{- end}}
+          env:
+            - name: PromExprValidationEnabled
+              {{- if .Values.sloth.PromExprValidation.enabled }}
+              value: "True"
+              {{- else }}
+              value: "False"
+              {{- end }}
           {{- if .Values.metrics.enabled }}
           ports:
             - containerPort: 8081

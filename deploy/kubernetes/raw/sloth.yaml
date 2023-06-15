@@ -88,6 +88,9 @@ spec:
           image: ghcr.io/slok/sloth:v0.11.0
           args:
             - kubernetes-controller
+          env:
+            - name: PromExprValidationEnabled
+              value: "True"
           ports:
             - containerPort: 8081
               name: metrics

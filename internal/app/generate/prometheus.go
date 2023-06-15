@@ -3,6 +3,7 @@ package generate
 import (
 	"context"
 	"fmt"
+	"os"
 
 	"github.com/prometheus/prometheus/model/rulefmt"
 
@@ -111,9 +112,12 @@ type Response struct {
 }
 
 func (s Service) Generate(ctx context.Context, r Request) (*Response, error) {
-	err := r.SLOGroup.Validate()
-	if err != nil {
-		return nil, fmt.Errorf("invalid SLO group: %w", err)
+	PromExprValidation := PromExprValidator()
+	if PromExprValidation == "True" {
+		err := r.SLOGroup.Validate()
+		if err != nil {
+			return nil, fmt.Errorf("invalid SLO group: %w", err)
+		}
 	}
 
 	// Generate Prom rules.
@@ -192,4 +196,13 @@ func mergeLabels(ms ...map[string]string) map[string]string {
 	}
 
 	return res
+}
+
+func PromExprValidator() string {
+	defaltValue := "True"
+	PromExprValidationEnabled, exists := os.LookupEnv("PromExprValidationEnabled")
+	if !exists {
+		PromExprValidationEnabled = defaltValue
+	}
+	return PromExprValidationEnabled
 }
