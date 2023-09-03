@@ -1,4 +1,4 @@
-module github.com/slok/sloth
+module github.com/jonas27/sloth
 
 go 1.19
 
