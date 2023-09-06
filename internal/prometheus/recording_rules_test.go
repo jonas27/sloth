@@ -8,9 +8,9 @@ import (
 	"github.com/prometheus/prometheus/model/rulefmt"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/slok/sloth/internal/alert"
-	"github.com/slok/sloth/internal/info"
-	"github.com/slok/sloth/internal/prometheus"
+	"github.com/jonas27/sloth/internal/alert"
+	"github.com/jonas27/sloth/internal/info"
+	"github.com/jonas27/sloth/internal/prometheus"
 )
 
 func getAlertGroup() alert.MWMBAlertGroup {

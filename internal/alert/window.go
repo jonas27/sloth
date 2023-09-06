@@ -11,8 +11,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/slok/sloth/internal/log"
-	alertwindowsv1 "github.com/slok/sloth/pkg/prometheus/alertwindows/v1"
+	"github.com/jonas27/sloth/internal/log"
+	alertwindowsv1 "github.com/jonas27/sloth/pkg/prometheus/alertwindows/v1"
 )
 
 var (

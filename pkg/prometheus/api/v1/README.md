@@ -3,7 +3,7 @@
 # v1
 
 ```go
-import "github.com/slok/sloth/pkg/prometheus/api/v1"
+import "github.com/jonas27/sloth/pkg/prometheus/api/v1"
 ```
 
 ### Package v1

@@ -1,6 +1,6 @@
 module github.com/jonas27/sloth
 
-go 1.19
+go 1.21
 
 require (
 	github.com/OpenSLO/oslo v0.2.2-0.20210629193748-b882029ce777
@@ -13,6 +13,7 @@ require (
 	github.com/prometheus/prometheus v0.40.3
 	github.com/sirupsen/logrus v1.9.0
 	github.com/slok/reload v0.1.0
+	github.com/jonas27/sloth v0.11.0
 	github.com/spotahome/kooper/v2 v2.2.0
 	github.com/stretchr/testify v1.8.1
 	github.com/traefik/yaegi v0.14.3

@@ -9,8 +9,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/slok/sloth/internal/log"
-	"github.com/slok/sloth/internal/prometheus"
+	"github.com/jonas27/sloth/internal/log"
+	"github.com/jonas27/sloth/internal/prometheus"
 )
 
 var (

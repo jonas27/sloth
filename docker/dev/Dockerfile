@@ -1,6 +1,6 @@
 FROM golang:1.19.3
 
-LABEL org.opencontainers.image.source https://github.com/slok/sloth
+LABEL org.opencontainers.image.source https://github.com/jonas27/sloth
 
 ARG GOLANGCI_LINT_VERSION="1.50.0"
 ARG MOCKERY_VERSION="2.14.0"

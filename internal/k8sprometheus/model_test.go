@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/slok/sloth/internal/k8sprometheus"
-	"github.com/slok/sloth/internal/prometheus"
+	"github.com/jonas27/sloth/internal/k8sprometheus"
+	"github.com/jonas27/sloth/internal/prometheus"
 )
 
 func getGoodSLOGroup() k8sprometheus.SLOGroup {

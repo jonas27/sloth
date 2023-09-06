@@ -5,7 +5,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/slok/sloth/pkg/kubernetes/api/sloth"
+	"github.com/jonas27/sloth/pkg/kubernetes/api/sloth"
 )
 
 const (

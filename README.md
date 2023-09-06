@@ -4,10 +4,10 @@
 
 # Sloth
 
-[![CI](https://github.com/slok/sloth/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/slok/sloth/actions/workflows/ci.yaml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/slok/sloth)](https://goreportcard.com/report/github.com/slok/sloth)
+[![CI](https://github.com/jonas27/sloth/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/jonas27/sloth/actions/workflows/ci.yaml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jonas27/sloth)](https://goreportcard.com/report/github.com/jonas27/sloth)
 [![Apache 2 licensed](https://img.shields.io/badge/license-Apache2-blue.svg)](https://raw.githubusercontent.com/slok/sloth/master/LICENSE)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/slok/sloth)](https://github.com/slok/sloth/releases/latest)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/slok/sloth)](https://github.com/jonas27/sloth/releases/latest)
 ![Kubernetes release](https://img.shields.io/badge/Kubernetes-v1.25-green?logo=Kubernetes&style=flat&color=326CE5&logoColor=white)
 [![OpenSLO](https://img.shields.io/badge/OpenSLO-v1alpha-green?color=4974EA&style=flat)](https://github.com/OpenSLO/OpenSLO#slo)
 
@@ -105,6 +105,6 @@ Check [CONTRIBUTING.md](CONTRIBUTING.md).
 [prometheus-operator]: https://github.com/prometheus-operator
 [grafana-dashboard]: https://grafana.com/grafana/dashboards/14348
 [openslo]: https://openslo.com/
-[common-sli-plugins]: https://github.com/slok/sloth-common-sli-plugins
+[common-sli-plugins]: https://github.com/jonas27/sloth-common-sli-plugins
 [docs-sli-plugins]: https://sloth.dev/usage/plugins/
 [docs]: https://sloth.dev

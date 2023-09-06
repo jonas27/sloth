@@ -106,7 +106,7 @@ spec:
         - name: git-sync-plugins
           image: k8s.gcr.io/git-sync/git-sync:v3.6.1
           args:
-            - --repo=https://github.com/slok/sloth-common-sli-plugins
+            - --repo=https://github.com/jonas27/sloth-common-sli-plugins
             - --branch=main
             - --wait=30
             - --webhook-url=http://localhost:8082/-/reload

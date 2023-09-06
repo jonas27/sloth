@@ -32,7 +32,7 @@ func customValues() msi {
 		"commonPlugins": msi{
 			"enabled": true,
 			"gitRepo": msi{
-				"url":    "https://github.com/slok/sloth-test-common-sli-plugins",
+				"url":    "https://github.com/jonas27/sloth-test-common-sli-plugins",
 				"branch": "main",
 			},
 		},

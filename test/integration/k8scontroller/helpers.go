@@ -15,8 +15,8 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 
-	slothclientset "github.com/slok/sloth/pkg/kubernetes/gen/clientset/versioned"
-	"github.com/slok/sloth/test/integration/testutils"
+	slothclientset "github.com/jonas27/sloth/pkg/kubernetes/gen/clientset/versioned"
+	"github.com/jonas27/sloth/test/integration/testutils"
 )
 
 type Config struct {

@@ -8,8 +8,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	prometheusv1 "github.com/slok/sloth/pkg/prometheus/api/v1"
-	prometheuspluginv1 "github.com/slok/sloth/pkg/prometheus/plugin/v1"
+	prometheusv1 "github.com/jonas27/sloth/pkg/prometheus/api/v1"
+	prometheuspluginv1 "github.com/jonas27/sloth/pkg/prometheus/plugin/v1"
 )
 
 type SLIPluginRepo interface {

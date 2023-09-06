@@ -1,4 +1,4 @@
-module github.com/slok/sloth/helm
+module github.com/jonas27/sloth/helm
 
 go 1.19
 
