@@ -10,7 +10,7 @@ import (
 	"time"
 
 	prometheusmodel "github.com/prometheus/common/model"
-	"gopkg.in/alecthomas/kingpin.v2"
+	"github.com/alecthomas/kingpin/v2"
 
 	"github.com/jonas27/sloth/internal/alert"
 	"github.com/jonas27/sloth/internal/k8sprometheus"

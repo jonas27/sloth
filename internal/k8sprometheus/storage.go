@@ -19,11 +19,9 @@ import (
 	"github.com/jonas27/sloth/internal/prometheus"
 )
 
-var (
-	// ErrNoSLORules will be used when there are no rules to store. The upper layer
-	// could ignore or handle the error in cases where there wasn't an output.
-	ErrNoSLORules = fmt.Errorf("0 SLO Prometheus rules generated")
-)
+// ErrNoSLORules will be used when there are no rules to store. The upper layer
+// could ignore or handle the error in cases where there wasn't an output.
+var ErrNoSLORules = fmt.Errorf("0 SLO Prometheus rules generated")
 
 func NewIOWriterPrometheusOperatorYAMLRepo(writer io.Writer, logger log.Logger) IOWriterPrometheusOperatorYAMLRepo {
 	return IOWriterPrometheusOperatorYAMLRepo{
@@ -133,12 +131,12 @@ func promRulesToKubeRules(rules []rulefmt.Rule) []monitoringv1.Rule {
 		if r.For != 0 {
 			forS = r.For.String()
 		}
-
+		duration := monitoringv1.Duration(forS)
 		res = append(res, monitoringv1.Rule{
 			Record:      r.Record,
 			Alert:       r.Alert,
 			Expr:        intstr.FromString(r.Expr),
-			For:         monitoringv1.Duration(forS),
+			For:         &duration,
 			Labels:      r.Labels,
 			Annotations: r.Annotations,
 		})
